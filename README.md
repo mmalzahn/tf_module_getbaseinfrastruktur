@@ -1,4 +1,4 @@
-# Terraform Modul für die Erzeugung von TLS Keys
+# Terraform Modul für die Bereitstellung von Daten aus dem Backend
 
 ## Funktion & Anwendung
 
