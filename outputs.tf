@@ -51,7 +51,12 @@ output "testhost_dns" {
   value = "${data.terraform_remote_state.baseInfra.testhost_dns}"
 }
 
-
+output "dns_name" {
+  value = "${data.terraform_remote_state.baseInfra.dns_name}"
+}
+output "dns_zone_id" {
+  value = "${data.terraform_remote_state.baseInfra.dns_zone_id}"
+}
 
 # output "ConfigId" {
 #   value = "${random_id.configId.b64_url}"
@@ -93,11 +98,4 @@ output "testhost_dns" {
 
 # output "state_key" {
 #   value = "${local.workspace_key}"
-# }
-# output "dns_name" {
-#   value = "${data.aws_route53_zone.dca_poc_domain.name}"
-# }
-
-# output "dns_zone_id" {
-#   value = "${data.aws_route53_zone.dca_poc_domain.zone_id}"
 # }
